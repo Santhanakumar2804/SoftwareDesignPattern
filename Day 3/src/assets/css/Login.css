@@ -1,0 +1,37 @@
+.login-background {
+    background-image: url('https://images.unsplash.com/photo-1616606103915-dea7be788566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+.card {
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    position: relative;
+    perspective: 1000px;
+}
+
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
+
+.rotate-y-180 .form-content {
+    transform: rotateY(180deg);
+}
