@@ -1,0 +1,16 @@
+@keyframes borderColorAnimation {
+    0% {
+      border-color: #4a90e2; /* Initial color */
+    }
+    50% {
+      border-color: #50e3c2; /* Intermediate color */
+    }
+    100% {
+      border-color: #4a90e2; /* Back to initial color */
+    }
+  }
+  
+  .animated-border {
+    animation: borderColorAnimation 2s infinite;
+  }
+  
